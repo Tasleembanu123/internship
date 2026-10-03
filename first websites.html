@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Registration Form</h1>
+
+        <form>
+
+            <!-- Name -->
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+            <br><br>
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+             <br><br>
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+             <br><br>
+            <!-- Phone -->
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+            >
+ <br><br>
+            <!-- Age -->
+            <label for="age">Age</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Enter your age"
+            >
+ <br><br>
+            <!-- Gender -->
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+
+            </select>
+ <br><br>
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+            >
+ <br><br>
+            <!-- Address -->
+            <label for="address">Address</label>
+            <textarea
+                id="address"
+                name="address"
+                placeholder="Enter your address"
+            ></textarea>
+ <br><br>
+            <!-- Terms -->
+            <div class="checkbox">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required
+                >
+ 
+                <label for="terms">
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <!-- Buttons -->
+            <button type="submit">Register</button>
+
+            <button type="reset" class="reset-btn">
+                Reset
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
